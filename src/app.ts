@@ -1,9 +1,7 @@
 import 'express-async-errors';
 import express, { Application } from 'express';
 import helmet from 'helmet';
-import dotenv from 'dotenv';
 import cors from 'cors';
-dotenv.config();
 
 import weatherRoutes from './routes/weatherRoutes';
 import timezoneRoutes from './routes/timezoneRoutes';

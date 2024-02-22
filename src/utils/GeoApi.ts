@@ -1,6 +1,4 @@
-import dotenv from 'dotenv';
 import axios from 'axios';
-dotenv.config();
 
 import { NotFoundError } from './ApiError';
 import IGeoResponse from '../interfaces/IGeoResponse';

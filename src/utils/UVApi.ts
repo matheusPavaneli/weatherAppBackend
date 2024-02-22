@@ -1,6 +1,4 @@
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 import IGeoApi from '../interfaces/IGeoApi';
 import IUVApi from '../interfaces/IUVApi';

@@ -1,6 +1,4 @@
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 import IUnsplashApi from '../interfaces/IUnsplashAPI';
 import IImageData from '../interfaces/IImageData';

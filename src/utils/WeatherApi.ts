@@ -1,7 +1,5 @@
 import moment from 'moment';
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 import IForecastWeatherData from '../interfaces/IForecastWeatherData';
 import IWeatherAPI from '../interfaces/IWeatherAPI';

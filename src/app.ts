@@ -8,7 +8,6 @@ import timezoneRoutes from './routes/timezoneRoutes';
 import uvIndexRoutes from './routes/uvIndexRoutes';
 import imageRoutes from './routes/imageRoutes';
 import errorHandler from './middlewares/errorHandler';
-import corsConfig from './config/corsConfig';
 
 class App {
   public app: Application;
@@ -20,7 +19,14 @@ class App {
   }
 
   middlewares(): void {
-    this.app.use(cors(corsConfig));
+    this.app.use(
+      cors({
+        origin: 'https://matheuspavaneli.github.io/weatherWiseApp',
+        methods: ['GET', 'POST'],
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        credentials: false,
+      }),
+    );
     this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());

@@ -33,6 +33,11 @@ CURRENT_UV_INDEX_API_KEY=your_currentuvindex_api_key_here
 UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
 ```
 
+Changing cors origin in `config`:
+```
+origin: 'your_origin_url',
+```
+
 ### Installing Dependencies
 
 Install the required dependencies by running:
